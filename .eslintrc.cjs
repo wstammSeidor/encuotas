@@ -7,6 +7,7 @@ module.exports = {
         "standard-with-typescript",
         "plugin:react/recommended"
     ],
+    "ignorePatterns": [".eslintrc.cjs"],
     "overrides": [
         {
             "env": {
@@ -22,11 +23,13 @@ module.exports = {
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.json"
     },
     "plugins": [
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
     }
 }
