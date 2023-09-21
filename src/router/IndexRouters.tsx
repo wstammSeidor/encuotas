@@ -1,4 +1,3 @@
-
 const IndeXRouter = (): JSX.Element => {
   return (
         <>
